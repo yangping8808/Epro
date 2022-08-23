@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="47" started-at="2022-07-31T19:27:48 CST" finished-at="2022-07-31T19:27:48 CST">
+    <groups>
+    </groups>
+    <test name="Epro" duration-ms="47" started-at="2022-07-31T19:27:48 CST" finished-at="2022-07-31T19:27:48 CST">
+      <class name="Base.TestCaseStudy">
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:Base.TestCaseStudy@5c3bd550]" name="testCase1" duration-ms="4" started-at="2022-07-31T19:27:48 CST" finished-at="2022-07-31T19:27:48 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+      </class> <!-- Base.TestCaseStudy -->
+    </test> <!-- Epro -->
+  </suite> <!-- Default Suite -->
+</testng-results>
