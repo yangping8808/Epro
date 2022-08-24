@@ -13,8 +13,24 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>16</source>
-                    <target>16</target>
+                    <encoding>UTF-8</encoding>
+                    <source>18</source>
+                    <target>18</target>
+                    <verbose>true</verbose>
+                    <fork>true</fork>
+                    <executable>D:\\java\\jdk\\bin\\javac</executable>
+                </configuration>
+            </plugin>
+            <!--  maven-surefire-plugin   -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <!--  调用testng.xml测试  jenkins持续继承中需用到 -->
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                 </configuration>
             </plugin>
         </plugins>
