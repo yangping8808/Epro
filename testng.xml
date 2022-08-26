@@ -8,6 +8,5 @@
             <parameter name="test02" value="test02yang" />
             <parameter name="test02" value="test03yang" />
         </classes>
-
     </test>
 </suite>
