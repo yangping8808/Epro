@@ -4,6 +4,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -56,7 +57,7 @@ public class Common {
         try {
             Process process = Runtime.getRuntime().exec(cmd);
             InputStream is = process.getInputStream();
-            InputStreamReader isr = new InputStreamReader(is,"GBK");
+            InputStreamReader isr = new InputStreamReader(is, StandardCharsets.UTF_8);
             BufferedReader br = new BufferedReader(isr);
             String content = br.readLine();
             while (content != null) {
